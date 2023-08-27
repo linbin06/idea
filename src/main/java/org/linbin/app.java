@@ -9,6 +9,8 @@ public class app {
         context.registerShutdownHook();
         BookDao bookDao= (BookDao) context.getBean("bookDao");
         bookDao.save();
+
+        System.out.println(123);
         context.close();
     }
 }
